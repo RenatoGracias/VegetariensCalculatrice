@@ -1,0 +1,199 @@
+BoxLayoutTest:
+ orientation: "vertical"
+<BoxLayoutTest>:
+ variable_nombre: idnom
+ age: idage
+ poids: idpoids
+ taille: idtaille
+ sexe: idsexe
+ tipo_de_dieta: idtipodedieta
+ nivel_de_actividad: id_nivel_de_actividad
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  Label:
+   text: "Bienvenido a la calculadora"
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  Label:
+   text: "de 'Vegetarianos y veganos México'."
+ BoxLayout:
+  orientation: "horizontal"
+  height: "50dp"
+  size_hint_y: None
+  BoxLayout:
+   orientation: "vertical"
+   height: "50dp"
+   size_hint_y: None
+   Label:
+    text: "¿Como te llamas?"
+   TextInput:
+    id: idnom
+    text: ""
+  BoxLayout:
+   Button:
+    text: "¡Hola!"
+    on_press: root.accueillir()
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Label:
+   text: root.bienvenue_texte
+ BoxLayout:
+  orientation: "vertical"
+  height: "50dp"
+  size_hint_y: None
+  Label:
+   text: "Escribe 2 si eres mujer y 1 si eres hombre:"
+  TextInput:
+   id: idsexe
+   text: ""
+ BoxLayout:
+  orientation: "vertical"
+  height: "50dp"
+  size_hint_y: None
+  Label:
+   text: "rentrez-vous votre poids:"
+   size_hint_x: 1
+  TextInput:
+   id: idpoids
+   text: ""
+ BoxLayout:
+  orientation: "vertical"
+  height: "50dp"
+  size_hint_y: None
+  Label:
+   text: "rentrez-vous votre taille, en cm:"
+  TextInput:
+   id: idtaille
+   text: ""
+ BoxLayout:
+  orientation: "vertical"
+  height: "50dp"
+  size_hint_y: None
+  Label:
+   text: "Quelle est ton age?"
+  TextInput:
+   id: idage
+   text: ""
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Button:
+   text: "calculer"
+   on_press: root.ActionCalculerIMC()
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  Label:
+   text: root.resultat_IMC
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  Label:
+   text: root.selecciona_nivel
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Label:
+   text: "1. Muy Ligera, 2. Ligera, 3. Moderada"
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Label:
+   text: "4. Activa ó 5. Muy activa"
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  TextInput:
+   id: id_nivel_de_actividad
+   text: ""
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Button:
+   text: "calculer TMB"
+   on_press: root.Calculer_TMB()
+ BoxLayout:
+  height: "25dp"
+  size_hint_y: None
+  Label:
+   text: root.resultat_TMB
+ BoxLayout:
+  height: "27dp"
+  size_hint_y: None
+  Label:
+   text: root.Resultat_TMB_et_facteur_d_activite
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Label:
+   text: root.elige_tipo_de_dieta_label
+ BoxLayout:
+  height: "36dp"
+  size_hint_y: None
+  Label:
+   text: "o 2. Cetogénica (alta en lípidos o Frank Suárez 3 * 1)"
+ BoxLayout:
+  orientation: "vertical"
+  height: "27dp"
+  size_hint_y: None
+  TextInput:
+   id: idtipodedieta
+   text: ""
+ BoxLayout:
+  height: ".9dp"
+  size_hint_y: None
+ Button:
+  text: "calcular Gramos"
+  on_press: root.calculer_les_grames_de_nutriments()
+ BoxLayout:
+  height: "18dp"
+  size_hint_y: None
+  BoxLayout:
+   height: "18dp"
+   size_hint_y: None
+   Label:
+    text: "Proteines"
+  BoxLayout:
+   height: "18dp"
+   size_hint_y: None
+   Label:
+    text: "Lipides"
+  BoxLayout:
+   height: "18dp"
+   size_hint_y: None
+   Label:
+    text: "Carbohidrates"
+ BoxLayout:
+  BoxLayout:
+   height: "27dp"
+   size_hint_y: None
+   Label:
+    text: root.quantite_de_proteines_en_grames
+  BoxLayout:
+   height: "27dp"
+   size_hint_y: None
+   Label:
+    text: root.quantite_de_lipides_en_grames
+  BoxLayout:
+   height: "27dp"
+   size_hint_y: None
+   Label:
+    text: root.quantite_de_carbohidrates_en_grames
+ BoxLayout:
+  height: "18dp"
+  size_hint_y: None
+  Label:
+   text: "Esta aplicación ha sido diseñada con objetivos educativos,"
+ BoxLayout:
+  height: "18dp"
+  size_hint_y: None
+  Label:
+   text: "Para una asesoria completa favor de consultar con "
+ BoxLayout:
+  height: "18dp"
+  size_hint_y: None
+  Label:
+   text: "un nutriólogo vegetariano y el médico"
